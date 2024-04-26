@@ -3,6 +3,7 @@ body {
     height: 100vh;
     grid-template-columns: 1fr 2fr 300px; 
     grid-template-rows: 1fr 2fr 1fr 1fr; 
+    overflow: hidden; /* Prevents scrolling */
   }
 
   header {
