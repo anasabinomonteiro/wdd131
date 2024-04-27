@@ -44,7 +44,8 @@ nav a:hover {
 
 main {
     display: flex;
-    justify-content: space-between;        
+    justify-content: space-between;     
+    max-width: 100%;   
 }
 
 .card {
