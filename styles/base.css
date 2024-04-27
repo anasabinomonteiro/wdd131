@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Open+Sans:wght@500&family=Playpen+Sans&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 50px;
+    padding: 0;
+}
+
+header{
+    padding: 1em;  
+    text-align: center;
+}  
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1em;     
+    background-color: #BF827B;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-right: 250px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: large;    
+}
+
+nav a:hover {
+    font-weight: 700;
+    text-decoration: overline;	
+}
+
+main {
+    display: flex;
+    justify-content: space-between;        
+}
+
+.card {
+    margin-right: 30px;
+    border: 2px solid grey;
+    border-radius: 10px;
+}
+
+.card-1 {
+    border: 2px solid grey;
+    border-radius: 10px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 2fr 1fr; 
+}
+
+.content-personal,
+.content-country {
+    display: flex;
+    align-items: center;
+}
+
+.personal-info h2,
+.personal-info p,
+.country-info h3,
+.country-info p {
+    text-align: center; 
+}
+
+footer {
+    background: #F2E3B5;
+    padding: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.card h2,
+.card h3,
+.card-1 h2 {
+    text-align: center; 
+}
+
+h2, h3 {
+    background-color:#F2E1CC;     
+}
+
+h1 {
+    background-color: #F2987A;
+    color: white;
+}
+
+.personal-image {
+    width: 50%;
+    margin-top: 30px;
+    margin-left: 30px;
+}  
+
+.country-image {
+    width: 50%;
+    margin-top: 30px;
+    margin-left: 100px;
+}

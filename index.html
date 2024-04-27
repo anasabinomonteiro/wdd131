@@ -3,10 +3,66 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WDD 131</title>
+    <title>WDD 131 - Dynamic Web Fundamentals-Ana Lucia da Silva Monteiro</title>
+    <meta name="description" content="WDD 131 - Dynamic Web Fundamentals.This page covers topics related to dynamic web fundamentals, including HTML, CSS, JavaScript, and more.">
+    <meta name=" author" content="Ana Lucia da Silva Monteiro">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Open+Sans:wght@500&family=Playpen+Sans&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap">
+    <link rel="stylesheet" href="styles/base.css">
+    <script src="scripts/getdates.js"></script>
 </head>
 <body>
-    <h1>WDD 131 - Ana Monteiro</h1>
-    <h1>Think Celestial!</h1>
+    <header>
+        <h1>WDD 131 - Dynamic Web Fundamentals - Ana Lucia da Silva Monteiro</h1>
+        <nav>
+            <ul>
+                <li><a href="www.linkedin.com/in/analuciamonteiro">Linkedin</a></li>
+                <li><a href="https://byui.instructure.com/">I-learn</a></li>
+                <li><a href="https://www.churchofjesuschrist.org/study/scriptures/dc-testament/dc/82?lang=eng&id=p10#p10">Scripture</a></li>
+                <li><a href="#">Final Project</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main class="grid-container">
+        <section class="card">
+            <div class="content-personal">
+                <div class="personal-info">
+                    <h2>About me</h2>
+                    <p>My name is Ana and I go by Aninha. I was born and live in Brazil, São Paulo. I am currently working a system analyst in a Totvs-Protheus consultancy. I am married and have one daughter and one son. My family is my treasure! I love to dance, watch movies and series.</p>
+                </div>
+                <div class="personal-image">
+                    <img src="images/ana.jpg" alt="My picture">
+                </div>
+            </div>
+            <div class="content-country">
+                <div class="country-info">
+                    <h3>São Paulo, Brazil</h3>
+                    <p>Brazil is the largest country in South America, with an area of more than 8.5 million km². Its capital is the city of Brasília. It presents a great climatic and landscape variety, which can be analyzed through morphoclimatic domains.</p>
+                </div>
+                <div class="country-image">
+                    <img src="images/brazil.jpg" alt="Brazil flag">
+                </div>
+            </div>
+        </section>
+    
+        <section class="card-1">
+            <h2>Web Development Resources</h2>
+            <ul>
+                <li> <a href="https://developer.mozilla.org/en-US/docs/Web">MDN W Docs</a></li>
+                <li> <a href="https://www.w3schools.com/">W3Schools</a></li>
+                <li> <a href="https://www.freecodecamp.org/">freeCodeCamp</a></li>
+                <li><a href="https://reactjs.org/">React</a></li>
+                <li><a href="https://angular.io/">Angular</a></li>
+            </ul>
+        </section>        
+    </main>
+
+    <footer>
+        <p>
+            &copy; <span id="currentYear"></span> Ana Lucia da Silva Monteiro - Brazil
+        </p>
+        <p id="lastModified">Last Modification: <span id="lastModifiedDate"></span></p>
+    </footer>
+    
 </body>
-</html>
+</html> 
