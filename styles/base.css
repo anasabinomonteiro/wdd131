@@ -2,8 +2,9 @@
 
 body {
     font-family: 'Roboto', sans-serif;
-    margin: 50px;
-    padding: 0;
+    margin: 0 auto;
+    max-width: 1000px;
+    padding: 0 20 px;
 }
 
 header{
@@ -27,7 +28,7 @@ nav ul {
 }
 
 nav ul li {
-    margin-right: 250px;
+    margin-right: 150px;
 }
 
 nav ul li a {
@@ -45,7 +46,9 @@ nav a:hover {
 main {
     display: flex;
     justify-content: space-between;     
-    max-width: 100%;   
+    max-width: 100%; 
+    padding: 20px;  
+    background-color: #F2E1CC;
 }
 
 .card {
@@ -78,10 +81,11 @@ main {
 }
 
 footer {
-    background: #F2E3B5;
+    background: #F2987A;
     padding: 20px;
     font-weight: bold;
     text-align: center;
+    color: white;
 }
 
 .card h2,
@@ -100,13 +104,23 @@ h1 {
 }
 
 .personal-image {
-    width: 50%;
+    width: 100%;
     margin-top: 30px;
     margin-left: 30px;
 }  
 
 .country-image {
-    width: 50%;
+    width: 100%;
     margin-top: 30px;
     margin-left: 100px;
+     
+}
+
+.name {
+    font-size: 25px; 
+    font-style: italic;
+}
+
+#lastModified{
+    color: red;
 }
