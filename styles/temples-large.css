@@ -1,0 +1,46 @@
+@media screen and (min-width: 768px) {
+    main.content {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1rem;
+    }
+
+    .main-content .home-title {
+        grid-column: 1 / -1;
+        text-align: center;
+    }
+
+    #main-nav ul {
+        display: flex;
+
+    }
+
+    h1{
+        margin-right: auto;
+    }
+  
+    nav ul {
+        list-style-type: none;
+        display: flex;
+        justify-content: flex-end; 
+    }
+    
+    nav ul li {
+        margin: 0 1rem;
+    }
+    
+    nav ul li a {
+        color: #fff;
+        text-decoration: none;
+        font-size: larger;    
+    } 
+    .menu-toggle{
+        visibility: hidden;
+        display: none;
+    }
+
+    #main-nav {
+        display: flex; 
+        align-items: center; 
+    }
+}

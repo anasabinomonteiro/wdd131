@@ -1,0 +1,124 @@
+@media screen and (max-width: 768px) {
+   
+.menu-toggle {
+    font-size: 1.5rem;
+    border: 0;
+    background: none;
+    color: white;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+}
+
+.menu-toggle::before {
+    content: "☰";
+}
+
+.menu-toggle.open::before {
+    content: "☑️";
+}
+
+.open a {
+    display: block;
+}
+
+#main-nav {
+    display: none;
+}
+
+.main-content {
+    display: block;
+}
+
+#main-nav ul {
+    display: none; 
+    flex-direction: column;
+    align-items: center;
+}
+
+#main-nav.open ul {
+    display: flex; 
+}
+
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding-left: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #008B8B;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    height: 70px;   
+}
+
+h1 {
+    margin-right: auto;
+    margin-left: 40px;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: flex-end;
+}
+
+nav ul li {
+    margin: 0 1rem;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: larger;
+    margin-right: 30px;    
+}
+
+main {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+}
+
+h2 {
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+figure {
+    margin: 0;
+    text-align: center;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+figcaption {
+    margin-top: 0.5rem;
+}
+
+footer {
+    background: #008B8B;
+    padding: 20px;
+    font-weight: bold;
+    font-size: larger;
+    text-align: center;
+    color: #fff;
+}
+
+

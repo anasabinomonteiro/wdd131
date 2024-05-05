@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Picture Album - Temples</title>
+    <meta name="description" content="WDD 131 - Dynamic Web Fundamentals.This page is for assingment Picture Album:This assignment applies the concepts presented in the learning activities to a picture album page that is responsive in small and larger views. This page will utilize a 'hamburger' menu and respond to user requests.">
+    <meta name=" author" content="Ana Lucia da Silva Monteiro">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Open+Sans:wght@500&family=Playpen+Sans&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap">
+    <link rel="stylesheet" href="styles/temples.css">
+    <link rel="stylesheet" href="styles/temples-large.css">
+    <script src="scripts/temples.js" defer></script>
+    <script src="scripts/getdates.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Temple Album</h1>
+        <button id="menu-toggle" class="menu-toggle"></button>
+        <nav id="main-nav">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Old</a></li>
+                <li><a href="#">New</a></li>
+                <li><a href="#">Large</a></li>
+                <li><a href="#">Small</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="main-content">
+        <h2 class="home-title">Home</h2>
+       <figure>
+            <img src="images/Sao-Paulo-Brazil-Temple.jpg" alt="Temple 1">
+            <figcaption>São Paulo Brazil</figcaption>
+        </figure>        
+       <figure>
+            <img src="images/Sao-Paulo-Brazil-Temple.jpg" alt="Temple 2">
+            <figcaption>São Paulo Brazil</figcaption>
+        </figure>
+       <figure>
+            <img src="images/Sao-Paulo-Brazil-Temple.jpg" alt="Temple 3">
+            <figcaption>São Paulo Brazil</figcaption>
+        </figure>
+       <figure>
+            <img src="images/Sao-Paulo-Brazil-Temple.jpg" alt="Temple 4">
+            <figcaption>São Paulo Brazil</figcaption>
+        </figure>
+       <figure>
+            <img src="images/Sao-Paulo-Brazil-Temple.jpg" alt="Temple 5">
+            <figcaption>São Paulo Brazil</figcaption>
+        </figure >
+       <figure>
+            <img src="images/Sao-Paulo-Brazil-Temple.jpg" alt="Temple 6">
+            <figcaption>São Paulo Brazil</figcaption>
+        </figure>
+       <figure>
+            <img src="images/Sao-Paulo-Brazil-Temple.jpg" alt="Temple 7">
+            <figcaption>São Paulo Brazil</figcaption>
+        </figure>
+       <figure>
+            <img src="images/Sao-Paulo-Brazil-Temple.jpg" alt="Temple 8">
+            <figcaption>São Paulo Brazil</figcaption>
+        </figure>
+       <figure>
+            <img src="images/Sao-Paulo-Brazil-Temple.jpg" alt="Temple 9">
+            <figcaption>São Paulo Brazil</figcaption>
+        </figure>     
+    </main>
+    <footer>
+        <p>&copy; <span id="currentYear"></span> Ana Lucia da Silva Monteiro - Brazil</p>
+        <p id="lastModified">Last Modification: <span id="lastModifiedDate"></span></p>
+    </footer>
+    
+</body>
+</html>
