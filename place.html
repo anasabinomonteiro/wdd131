@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131 - Dynamic Web Fundamentals - Ana Lucia da Silva Monteiro</title>
+    <meta name="description" content="WDD 131 - Dynamic Web Fundamentals - Country Page - Apply the concepts from the learning activities in the design and development of a web page. The subject of the page is about a country or place where you live or have visited or wish to visit. There are specific, functional and developmental requirements for the layout, design, and content of the page.">
+    <meta name=" author" content="Ana Lucia da Silva Monteiro">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Open+Sans:wght@500&family=Playpen+Sans&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap">
+    <link rel="stylesheet" href="styles/place.css">
+    <link rel="stylesheet" href="styles/place-large.css">
+    <script src="scripts/place.js" defer></script>
+    <script src="scripts/getdates.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Cape Verde</h1>
+    </header>
+    <main>
+        <div class="cabo">
+            <picture>
+                <source srcset="images/cape_verde-large.webp" media="(min-width: 1000px)">
+                <source srcset="images/cape_verde-medium.webp" media="(min-width: 500px)">
+                <img src="images/cape_verde-small.webp" alt="Cabo Verde" width="500" height="250">
+            </picture>
+        </div>
+        <p class="ref-image">Imagem de wirestock no <a href="https://br.freepik.com/fotos-gratis/foto-aerea-de-uma-bela-praia-de-areia-branca_9852364.htm#query=cabo%20verde&position=13&from_view=keyword&track=ais_user&uuid=508662fb-5b2e-478d-a7b7-416acbbb400b">Freepik</a></p>        <label class="data">
+            <h2>Data</h2>
+            <span>Area: 1557 sq ml</span><br>
+            <span>Population: 593.149</span><br>
+            <span>Capital: Praia</span><br>
+            <span>Language: Portuguese, Cape Verdean Creole</span><br>
+            <span>Currency: Cape Verde Escudo</span><br>
+            <span>Time Zone: UTC-1</span><br>
+            <span>Calling Code: +238</span><br>
+            <span>Internet TLD: .cx</span><br>
+        </label>
+        <label class="weather">
+            <h2>Weather</h2>
+            <img src="images/clouds_sunny_icon.svg">
+            <span>Temperature: 28°C</span><br>
+            <span>Conditions: Sunny</span><br>
+            <span>Wind: 22 km/h</span><br>
+        </label>        
+    </main>
+    <footer>
+        <p>&copy; <span id="currentYear"></span> Ana Lucia da Silva Monteiro - Brazil</p>
+        <p id="lastModified">Last Modification: <span id="lastModifiedDate"></span></p>
+    </footer>
+</body>
+</html>

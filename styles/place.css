@@ -1,0 +1,84 @@
+:root {
+    --main-blue: #0067a3; /*main blue*/
+    --main-white: #ffffff ; /*main white*/
+    --main-red: #cf142b; /*main red*/
+    --main-yellow: #ffce00; /*main yellow*/
+}
+
+@media screen and (max-width: 500px) {
+    body {
+        font-family: 'Roboto', sans-serif;
+        background-color: var(--main-white);
+        color: var(--main-blue);
+    }
+
+    header {
+        background-color: var(--main-red);
+        color: var(--main-white);
+        text-align: center;
+        padding: 20px;
+    }
+
+    main {
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .cabo img {
+        display: block;
+        margin: 0 auto;
+        max-width: 100%;
+        height: auto;
+    }
+
+    .data,
+    .weather {
+        background-color: var(--main-blue);
+        color: var(--main-white);
+        padding: 10px;
+        margin-top: 20px;
+        width: 100%;
+        max-width: 500px;
+        text-align: center;
+    }
+
+    .data h2,
+    .weather h2 {
+        color: var(--main-white);
+        font-size: 1.2em;
+        margin-bottom: 10px;
+    }
+
+    .data span,
+    .weather span {
+        display: block;
+        margin-bottom: 5px;
+    }
+
+    .weather img {
+        display: block;
+        margin: 0 auto;
+        max-width: 80px;
+        height: auto;
+    }
+
+
+    .ref-image a {
+        color: var(--main-white);
+        text-decoration: none;
+    }
+    
+    .ref-image a:hover {
+        text-decoration: underline;
+    }
+
+    footer {
+        background: var(--main-red);
+        padding: 20px;
+        font-weight: bold;
+        font-size: larger;
+        text-align: center;
+        color: var(--main-white);
+    }
+}
