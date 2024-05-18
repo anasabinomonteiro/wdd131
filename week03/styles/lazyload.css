@@ -1,0 +1,28 @@
+h1 {
+    text-align: center;
+}
+
+main{
+    margin: 0;
+    width: 400px;
+    display: block;
+    align-items: center;
+}
+
+img {
+    width: 100%;
+    display: block;
+    margin: 20px 0;
+    opacity: 5;
+    transition: opacity 1s ease-in-out;
+}
+
+
+
+footer {
+    background: whitesmoke ;
+    padding: 20px;
+    font-weight: bold;
+    font-size: larger;
+    text-align: center;
+}
