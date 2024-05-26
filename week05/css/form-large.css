@@ -1,0 +1,7 @@
+/* Styles large screens */
+
+@media (min-width: 992px) {
+    .fr1 {
+        max-width: 800px;
+    }
+}

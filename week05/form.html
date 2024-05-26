@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Creation of a product review form page, using good design and habilities learned">
+    <meta name="author" content="Ana Lucia da Silva Monteiro">
+    <title>Product Review Form</title>
+    <link rel="stylesheet" href="css/form.css">
+    <link rel="stylesheet" href="css/form-medium.css">
+    <link rel="stylesheet" href="css/form-large.css">
+    <script src="scripts/form.js" defer></script>
+    <script src="/scripts/getdates.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Designing Web Forms</h1>
+    </header>
+    <main>
+        <h1>Product Review</h1>
+        <form method="get" action="review.html" class="fr1">
+            <fieldset>
+                <legend>Product Name*</legend>
+                    <select id="product" name="product" required>
+                    <option value="" disabled selected>Choose one Product...</option>
+                    <!-- Options populated dynamically via JS -->
+                </select>
+            </fieldset>    
+            <fieldset>
+                <legend>Overall Rating</legend>
+                <label for="rating">Rating:</label>
+                <input type="range" id="rating" name="rating" min="0" max="5" value="0" step="1" list="rangevalues" required>
+                <datalist id="rangevalues">
+                    <option value="0" label="0">0</option>
+                    <option value="1" label="1">1</option>
+                    <option value="2" label="2">2</option>
+                    <option value="3" label="3">3</option>
+                    <option value="4" label="4">4</option>
+                    <option value="5" label="5">5</option>
+                </datalist>
+                <output id="rangeOutput" for="rating"></output>
+            </fieldset>
+            <fieldset>
+                <legend>Date of Installation*</legend>
+                <label for="installationDate">Installation Date:</label>
+                <input type="date" id="installationDate" name="installationDate" required>
+            </fieldset>
+            <fieldset>
+                <legend>Which features did you find useful in the product?</legend>
+                <div>(Check all that apply)</div>
+                <label><input type="checkbox" name="features" value="durability">Durability</label>
+                <label><input type="checkbox" name="features" value="easyUse">Ease of Use</label>
+                <label><input type="checkbox" name="features" value="performance">Performance</label>
+                <label><input type="checkbox" name="features" value="design">Design</label>
+            </fieldset>
+            <fieldset>
+                <legend>Written Review</legend>
+                <label for="review">Review (Optional):</label>
+                <textarea id="review" name="review"></textarea>
+            </fieldset>
+            <fieldset>
+                <legend>Your Name</legend>
+                <label for="fullname">Your Name(Optional)</label>
+                <input type="text" id="fullname" name="fullname">
+            </fieldset>
+            <input type="submit" value="Post Review">
+        </form>
+    </main>
+    <footer>
+        <p>&copy; <span id="currentYear"></span> ♦ Ana Lucia da Silva Monteiro ♦ Brazil</p>
+        <p id="lastModified">Last Modification: <span id="lastModifiedDate"></span></p>
+    </footer>    
+</body>
+</html>
+

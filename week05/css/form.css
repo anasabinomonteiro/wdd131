@@ -1,0 +1,115 @@
+body {
+    font-size: 16px;
+    font-family: Arial, sans-serif; 
+    max-width: 800px;
+}
+
+header {
+    background-color: #483d8b;
+    padding: .5rem 2%;
+    color: #ddd;
+}
+
+header h1 {
+    margin: 0;
+    padding: .5rem 2%;
+}
+
+main {
+    padding: 0 2%;
+    min-height: 20rem;
+}
+
+/*----------- FORM STYLE-----------*/
+form {
+    background: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.fr1 fieldset {
+    margin: 2rem 0;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    padding: .5rem 2%;
+}
+
+.fr1 legend, div {
+    color: #445ba9;
+    padding: 0 .5rem;
+}
+
+.fr1 label {
+    display: block;
+    padding-top: 1rem;
+    color: #4b0082;
+    font-size:  .9rem;
+}
+
+.fr1 input, select{
+    width: 100%;
+    padding: 2px;
+    height: 30px;
+    border: 1px solid #ccc;
+    border-radius: 4px;  
+    margin-bottom: 10px;   
+}
+
+.fr1 input[type="range"] {
+    width: 100%;
+    margin: 10px 0;
+}
+
+.fr1 datalist {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10px;
+}
+
+.fr1 datalist option {
+    display: block;
+    text-align: center;
+    width: 20px;
+}
+
+.fr1 textarea {
+    width: 100%;
+    height: 70px;
+    border: 1px solid #ccc;
+    border-radius: 4px;  
+}
+
+.fr1 label {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.fr1 input[type="checkbox"] {
+    width: auto;
+    margin-right: 8px;
+}
+
+.fr1 input[type="submit"] {
+    border: none;
+    background-image: linear-gradient(#483d8b, #887ec6);
+    color: #fff;
+    border-radius: 6px;
+    padding: .8rem;
+    max-width: 400px;
+    margin: -1rem 2% 2rem 2%;
+    box-shadow: 1px 1px 4px #999;
+}
+
+.fr1 input[type="submit"]:hover {
+    background-color: #000;
+}
+
+/*----------- FOOTER-----------*/
+footer {
+    background-color: #483d8b;
+    padding: .5rem 2%;
+    text-align: center;
+    color: #ddd;
+}
