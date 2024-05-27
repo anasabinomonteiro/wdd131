@@ -27,18 +27,25 @@
                 </select>
             </fieldset>    
             <fieldset>
+                <!-- Rating type RADIO -->
                 <legend>Overall Rating</legend>
-                <label for="rating">Rating:</label>
-                <input type="range" id="rating" name="rating" min="0" max="5" value="0" step="1" list="rangevalues" required>
-                <datalist id="rangevalues">
-                    <option value="0" label="0">0</option>
-                    <option value="1" label="1">1</option>
-                    <option value="2" label="2">2</option>
-                    <option value="3" label="3">3</option>
-                    <option value="4" label="4">4</option>
-                    <option value="5" label="5">5</option>
-                </datalist>
-                <output id="rangeOutput" for="rating"></output>
+                <div class="radio-group">
+                <label for="rating-1">
+                    <input type="radio" id="rating-1" name="rating" value="1" required> 1
+                </label>
+                <label for="rating-2">
+                    <input type="radio" id="rating-2" name="rating" value="2" required> 2
+                </label>
+                <label for="rating-3">
+                    <input type="radio" id="rating-3" name="rating" value="3" required> 3
+                </label>
+                <label for="rating-4">
+                    <input type="radio" id="rating-4" name="rating" value="4" required> 4
+                </label>
+                <label for="rating-5">
+                    <input type="radio" id="rating-5" name="rating" value="5" required> 5
+                </label>
+            </div>                
             </fieldset>
             <fieldset>
                 <legend>Date of Installation*</legend>

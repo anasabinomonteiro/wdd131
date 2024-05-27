@@ -5,7 +5,7 @@ body {
 }
 
 header {
-    background-color: #483d8b;
+    background-color: #29273a;
     padding: .5rem 2%;
     color: #ddd;
 }
@@ -25,52 +25,53 @@ form {
     background: #fff;
     padding: 20px;
     border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 10px rgba(161, 155, 155, 0.1);
 }
 
 .fr1 fieldset {
-    margin: 2rem 0;
-    border: 1px solid #ddd;
-    border-radius: 6px;
-    padding: .5rem 2%;
+    margin-bottom: 20px;;
 }
 
 .fr1 legend, div {
-    color: #445ba9;
+    color: #290345;
     padding: 0 .5rem;
 }
 
 .fr1 label {
-    display: block;
-    padding-top: 1rem;
-    color: #4b0082;
-    font-size:  .9rem;
+    display: flex;
+    align-items: center;
+    margin-right: 10px;    
+    color:#290345;
 }
 
 .fr1 input, select{
     width: 100%;
-    padding: 2px;
-    height: 30px;
+    padding: 8px;
+    height: 40px;
     border: 1px solid #ccc;
-    border-radius: 4px;  
-    margin-bottom: 10px;   
+    border-radius: 4px;
+    margin-top: 10px;  
+    margin-bottom: 10px;
+    font-size: medium;
+    box-sizing: border-box;     
 }
 
-.fr1 input[type="range"] {
-    width: 100%;
-    margin: 10px 0;
+.fr1 input[type="radio"] {
+    margin-right: 5px;
 }
 
-.fr1 datalist {
+.fr1 .radio-group {
     display: flex;
-    justify-content: space-between;
-    padding: 0 10px;
+    flex-direction: row;
+    align-items: center;
+    gap: 15px;
+    margin-left: 5px;    
 }
 
-.fr1 datalist option {
-    display: block;
-    text-align: center;
-    width: 20px;
+.fr1 .radio-group label {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .fr1 textarea {
@@ -78,12 +79,12 @@ form {
     height: 70px;
     border: 1px solid #ccc;
     border-radius: 4px;  
+    box-sizing: border-box;
 }
 
-.fr1 label {
-    display: flex;
-    align-items: center;
-    margin-bottom: 10px;
+.fr1 input[type="date"], .fr1 input[type="text"] {
+    width: calc(100% - 16px); /*Adjuste to avoid overflow */
+    margin-top: 5px;
 }
 
 .fr1 input[type="checkbox"] {
@@ -93,13 +94,14 @@ form {
 
 .fr1 input[type="submit"] {
     border: none;
-    background-image: linear-gradient(#483d8b, #887ec6);
+    background-image: linear-gradient(#29273a, #54507a);
     color: #fff;
     border-radius: 6px;
-    padding: .8rem;
+    padding: .10rem;
     max-width: 400px;
     margin: -1rem 2% 2rem 2%;
     box-shadow: 1px 1px 4px #999;
+    font-size: large;
 }
 
 .fr1 input[type="submit"]:hover {
@@ -108,7 +110,7 @@ form {
 
 /*----------- FOOTER-----------*/
 footer {
-    background-color: #483d8b;
+    background-color: #29273a;
     padding: .5rem 2%;
     text-align: center;
     color: #ddd;
