@@ -1,0 +1,115 @@
+body {
+    font-family: 'Lato', sans-serif;
+    color: #34435E;
+    background-color: #F9F9F9;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #6369D1;
+    color: #FFFFFF;
+    padding: 1rem;
+    text-align: center;
+}
+
+header h1 {
+    font-family: 'Playpen Sans', sans-serif;
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+header h2 {
+    font-family: 'Lato', sans-serif;
+    font-size: 1.2rem;
+    margin-top: 0.5rem;
+}
+
+main {
+    padding: 2rem;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+h2, h3 {
+    color: black;
+}
+
+h3 {
+    margin-top: 1.5rem;
+}
+
+p {
+    margin-bottom: 1rem;
+}
+
+.colors {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+
+.colors th, .colors td {
+    border: 1px solid #CCCCCC;
+    padding: 0.5rem;
+    text-align: center;
+}
+
+.colors .primary {
+    background-color: #D8D2E1;
+    color: black;
+}
+
+.colors .secondary {
+    background-color: #34435E;
+    color: #FFFFFF;
+}
+
+.colors .accent1 {
+    background-color: #6369D1;
+    color: white;
+}
+
+.colors .accent2 {
+    background-color: #60E1E0;
+    color: black;
+}
+
+h4 {
+    font-family: 'Playpen Sans', sans-serif;
+    margin: 1rem 0 0.5rem;
+}
+
+.normal-paragraph {
+    font-family: 'Lato', sans-serif;
+    color: #34435E;
+}
+
+.colored {
+    color: #34435E;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 1rem;
+    border-radius: 5px;
+}
+
+hr {
+    border: 0;
+    height: 1px;
+    background-color: #CCCCCC;
+    margin: 2rem 0;
+}
+
+a {
+    color: #34435E;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
