@@ -9,7 +9,7 @@ body {
 
 header {
     background-color: #6369D1;
-    color: #FFFFFF;
+    color: #34435E;
     padding: 1rem;
     text-align: center;
 }
@@ -25,6 +25,27 @@ header h2 {
     font-size: 1.2rem;
     margin-top: 0.5rem;
 }
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 0;
+}
+
+nav ul li a {
+    color: #FFFFFF;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+    color: #D8D2E1;
+}
+
 
 main {
     padding: 2rem;
@@ -113,3 +134,51 @@ a {
 a:hover {
     text-decoration: underline;
 }
+
+/* --------------------------------------------------------- Media query - small-------------------------------------------------------------------------------------------------- */
+@media (max-width: 600px) {
+    header {
+        text-align: center;
+        font-family: 'Playpen Sans', sans-serif;
+    }
+
+    header h1 {
+        font-family: 'Playpen Sans', sans-serif;
+        margin: 0;
+        font-size: 1.5rem;
+    }
+
+    nav ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+    
+    nav ul li {
+        width: 100%;
+        text-align: center;
+    }
+    
+    nav ul li a {
+        color: #FFFFFF;
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 20px;
+    }
+    
+    nav ul li a:hover {
+        text-decoration: underline;
+        color: #D8D2E1;
+    }
+
+    .colors th, .colors td {
+        border: 1px solid #CCCCCC;
+        padding: 0;
+        text-align: center;
+    }
+        
+    }
+

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Website project for the end of the course WDD 131- Block 1. The website brings the idea of ​​transformation, well-being and connection that dance provides for women over 30.">
+    <meta name="author" content="Ana Lucia da Silva Monteiro">
+    <title>Women in Movement</title>
+    <link rel="stylesheet" href="styles/women-in-mov.css"> 
+    <link rel="stylesheet" href="styles/women-in-mov-medium.css"> 
+    <link rel="stylesheet" href="styles/women-in-mov-large.css"> 
+    <script src="scripts/women-in-mov.js" defer></script>
+</head>
+<body>
+    <header>
+        <nav aria-label="Main navigation">
+            <ul>
+                <li><a href="woman-in-mov.html">Home</a></li>
+                <li><a href="physical-mental-benefits.html">Physical and Mental Benefits</a></li>
+                <li><a href="forum-community.html">Forum and Communit</a></li>
+                <li><a href="siteplan.html">Siteplan</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Forum and Community</h1>
+        <div class="form-and-images-container">
+            <form method="get" action="forum-response.html" class="fr1">
+                <fieldset>
+                    <legend>Your Name*</legend>
+                    <label for="fullname"></label>
+                    <input type="text" id="fullname" name="fullname" required>
+                </fieldset>
+                <fieldset>
+                    <legend>Your Age*</legend>
+                    <label for="age">Select your age range:</label>
+                    <select id="age" name="age" required>
+                        <option value="" disabled selected>Select age...</option>
+                        <option value="18-30">18-30</option>
+                        <option value="30-50">30-50</option>
+                        <option value="50-70">50-70</option>
+                        <option value="70-90">70-90</option>
+                        <option value="90+">More than 90</option>
+                    </select>
+                    <p id="ageMessage"></p>
+                </fieldset>
+                <fieldset class="large-textarea">
+                    <legend>Share here what makes you happy about dancing:</legend>
+                    <label for="experience"></label>
+                    <textarea id="experience" name="experience" required></textarea>
+                </fieldset>            
+                <input type="submit" value="Share your experience">
+            </form>
+            <div class="images-container">
+                <img src="images/dance6.webp" alt="Women in a dance festival" loading="lazy" width="300" height="350">
+                <img src="images/dance3.webp" alt="Women in a dance festival-2" loading="lazy" width="300" height="350">
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; <span id="currentYear"></span> ♦ Ana Lucia da Silva Monteiro ♦ Brazil</p>
+        <p id="lastModified">Last Modification: <span id="lastModifiedDate"></span></p>
+    </footer>  
+</body>
+</html>
